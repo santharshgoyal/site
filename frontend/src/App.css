@@ -1,0 +1,117 @@
+/* Personal site — minimal, monospace, dark */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+.App {
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  color: #e8e8e8;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 400;
+}
+
+::selection {
+  background: #e8e8e8;
+  color: #0a0a0a;
+}
+
+/* Title reveal */
+.title-reveal {
+  animation: titleFade 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s both;
+}
+
+@keyframes titleFade {
+  from { opacity: 0; transform: translateX(-6px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.nav-fade-in {
+  animation: navFade 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
+}
+
+@keyframes navFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Page reveal */
+.fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Nav link hover — underline reveal */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: #e8e8e8;
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: #e8e8e8;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+/* Back link */
+.back-link {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #e8e8e8;
+}
+
+/* Sidebar link hover (used on blog pages) */
+.sidebar-link {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.sidebar-link:hover {
+  color: #ffffff;
+}
+
+.sidebar-link:hover::after {
+  transform: scaleX(1);
+}
