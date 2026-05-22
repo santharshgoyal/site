@@ -31,14 +31,12 @@ export default function BlogPost() {
   return (
     <main
       data-testid="blog-post-page"
-      className="min-h-screen w-full grid grid-cols-12"
+      className="relative min-h-screen w-full"
       style={{ backgroundColor: "#0a0a0a" }}
     >
-      <div className="col-span-12 md:col-span-3 lg:col-span-2">
-        <BlogSidebar heading="BLOG:" showBlogArchives />
-      </div>
+      <BlogSidebar heading="BLOG:" showBlogArchives />
 
-      <div className="col-span-12 md:col-span-9 lg:col-span-10 px-6 md:px-10 lg:px-16 pt-8 md:pt-12 pb-16">
+      <div className="w-full px-6 md:px-10 lg:px-16 pt-8 md:pt-12 pb-16">
         <article className="max-w-2xl mx-auto fade-in-up">
           {/* Title with underline */}
           <header className="border-b border-[#e8e8e8]/80 pb-3">

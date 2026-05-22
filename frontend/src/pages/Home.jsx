@@ -64,7 +64,8 @@ export default function Home() {
           </li>
           <li>
             <a
-              href="mailto:hello@harsh.example"
+              href="/links"
+              onClick={go("/links")}
               className="nav-link"
               data-testid="nav-contact"
             >

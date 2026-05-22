@@ -27,14 +27,12 @@ export default function Blog() {
   return (
     <main
       data-testid="blog-archives-page"
-      className="min-h-screen w-full grid grid-cols-12"
+      className="relative min-h-screen w-full"
       style={{ backgroundColor: "#0a0a0a" }}
     >
-      <div className="col-span-12 md:col-span-3 lg:col-span-2">
-        <BlogSidebar heading="BLOG ARCHIVES:" />
-      </div>
+      <BlogSidebar heading="BLOG ARCHIVES:" />
 
-      <div className="col-span-12 md:col-span-9 lg:col-span-10 px-6 md:px-10 lg:px-16 pt-8 md:pt-12 pb-24">
+      <div className="w-full px-6 md:px-10 lg:px-16 pt-8 md:pt-12 pb-24">
         <div className="max-w-3xl mx-auto fade-in-up">
           {/* Tabs */}
           <div className="border-y border-[#e8e8e8]/80 py-4">
