@@ -115,3 +115,66 @@
 .sidebar-link:hover::after {
   transform: scaleX(1);
 }
+
+/* Artwork thumbnail subtle reveal */
+.artwork-thumb {
+  cursor: pointer;
+  position: relative;
+}
+
+.artwork-thumb img {
+  filter: brightness(0.95);
+  transition:
+    transform 0.5s ease-out,
+    filter 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.artwork-thumb:hover img {
+  filter: brightness(1.05);
+  box-shadow: 0 25px 60px -20px rgba(0, 0, 0, 0.9);
+}
+
+/* Lightbox fade in */
+.lightbox-fade {
+  animation: lightboxFade 0.35s ease both;
+}
+
+@keyframes lightboxFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Image pop-in */
+.image-pop {
+  animation: imagePop 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: 0.05s;
+}
+
+@keyframes imagePop {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Caption fade after circle finishes drawing */
+.caption-fade {
+  animation: captionFade 0.5s ease both;
+  animation-delay: 1.2s;
+}
+
+@keyframes captionFade {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* SVG circle draw — pathLength normalized to 1 */
+.circle-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: circleDraw 1.1s cubic-bezier(0.65, 0, 0.35, 1) both;
+  animation-delay: 0.2s;
+}
+
+@keyframes circleDraw {
+  to { stroke-dashoffset: 0; }
+}
