@@ -41,19 +41,10 @@ export default function ArtworkLightbox({ artwork, onClose }) {
         className="relative max-w-[80vw] max-h-[80vh]"
         onClick={(e) => e.stopPropagation()}
       >
-        <img
-          ref={imgRef}
-          src={artwork.src}
-          alt={artwork.title}
-          onLoad={onLoad}
-          className="block max-w-[80vw] max-h-[80vh] object-contain shadow-[0_40px_120px_-20px_rgba(0,0,0,0.8)] image-pop"
-          data-testid="lightbox-image"
-        />
-
-        {/* Circle that draws itself behind/around the image */}
+        {/* Circle that draws itself BEHIND the image */}
         {dim.w > 0 && (
           <svg
-            className="absolute pointer-events-none"
+            className="absolute pointer-events-none z-0"
             style={{
               left: "50%",
               top: "50%",
@@ -77,6 +68,15 @@ export default function ArtworkLightbox({ artwork, onClose }) {
             />
           </svg>
         )}
+
+        <img
+          ref={imgRef}
+          src={artwork.src}
+          alt={artwork.title}
+          onLoad={onLoad}
+          className="relative z-10 block max-w-[80vw] max-h-[80vh] object-contain shadow-[0_40px_120px_-20px_rgba(0,0,0,0.8)] image-pop"
+          data-testid="lightbox-image"
+        />
 
         {/* Caption */}
         <p
