@@ -78,9 +78,10 @@ export default function ArtworkLightbox({ artwork, onClose }) {
           data-testid="lightbox-image"
         />
 
-        {/* Caption */}
+        {/* Caption — sits below the bottom of the ellipse, never overlapping it */}
         <p
-          className="absolute -bottom-10 left-0 right-0 text-center text-xs sm:text-sm text-[#bdbdbd] caption-fade"
+          className="absolute left-0 right-0 text-center text-xs sm:text-sm text-[#bdbdbd] caption-fade"
+          style={{ top: `calc(100% + ${padY + 28}px)` }}
           data-testid="lightbox-caption"
         >
           {artwork.title}
