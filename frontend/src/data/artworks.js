@@ -1,40 +1,42 @@
-// Sample artworks — swap image URLs with your own when ready
+// Sample artworks — swap image URLs with your own when ready.
+// Using picsum.photos placeholders (deterministic by seed). Replace src URLs
+// with your actual painting / sketch image URLs.
 export const ARTWORKS = [
   {
     id: "cherry-path",
     title: "Cherry blossom path",
     category: "Paintings",
-    src: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1400&q=80",
+    src: "https://picsum.photos/seed/cherry-path/1200/700",
   },
   {
     id: "heron",
     title: "Heron at midnight",
     category: "Paintings",
-    src: "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?auto=format&fit=crop&w=1400&q=80",
+    src: "https://picsum.photos/seed/heron/1000/1300",
   },
   {
     id: "sunflower",
     title: "Sunflower study",
     category: "Paintings",
-    src: "https://images.unsplash.com/photo-1597423244036-ef5020e83f3c?auto=format&fit=crop&w=1400&q=80",
+    src: "https://picsum.photos/seed/sunflower/1100/900",
   },
   {
     id: "cherry-branch",
     title: "Cherry branch",
     category: "Paintings",
-    src: "https://images.unsplash.com/photo-1490604221525-be3592a06f99?auto=format&fit=crop&w=1400&q=80",
+    src: "https://picsum.photos/seed/branch/1300/700",
   },
   {
     id: "still-life",
     title: "Still life — bottle & jug",
     category: "Sketches",
-    src: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1400&q=80",
+    src: "https://picsum.photos/seed/stilllife/1200/900",
   },
   {
     id: "pottery",
     title: "Earthen pot",
     category: "Sketches",
-    src: "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=1400&q=80",
+    src: "https://picsum.photos/seed/pot/1200/900",
   },
 ];
 
