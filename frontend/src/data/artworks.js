@@ -6,7 +6,7 @@ export const ARTWORKS = [
     id: "cherry-path",
     title: "Cherry blossom path",
     category: "Paintings",
-    src: "https://picsum.photos/seed/cherry-path/1200/700",
+    src: "/site/image.jpg",
   },
   {
     id: "heron",
