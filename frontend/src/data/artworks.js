@@ -6,37 +6,37 @@ export const ARTWORKS = [
     id: "cherry-path",
     title: "Cherry blossom path 2017",
     category: "Paintings",
-    src: "/site/image.jpg",
+    src: "/site/image.png",
   },
   {
     id: "heron",
     title: "Heron at midnight 2015",
     category: "Paintings",
-    src: "/site/image 2.jpg",
+    src: "/site/image2.png",
   },
   {
     id: "sunflower",
     title: "Flowering in the Sun 2015",
     category: "Paintings",
-    src: "/site/IMAGE 3.jpg",
+    src: "/site/image3.png",
   },
   {
     id: "cherry-branch",
     title: "Branching Out",
     category: "Paintings",
-    src: "/site/image 4.jpg",
+    src: "/site/image4.png",
   },
   {
     id: "still-life",
     title: "Bottle & Jug",
     category: "Sketches",
-    src: "/site/image 5.jpg",
+    src: "/site/image5.png",
   },
   {
     id: "pottery",
     title: "Earthen pot",
     category: "Sketches",
-    src: "/site/image 6.jpg",
+    src: "/site/image6.png",
   },
 ];
 
