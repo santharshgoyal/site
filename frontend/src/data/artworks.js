@@ -6,7 +6,7 @@ export const ARTWORKS = [
     id: "cherry-path",
     title: "Cherry blossom path 2017",
     category: "Paintings",
-    src: "/site/image.png",
+    src: "/site/image.jpg",
   },
   {
     id: "heron",
@@ -24,7 +24,7 @@ export const ARTWORKS = [
     id: "cherry-branch",
     title: "Branching Out",
     category: "Paintings",
-    src: "/site/image4.png",
+    src: "/site/image4.jpg",
   },
   {
     id: "still-life",
