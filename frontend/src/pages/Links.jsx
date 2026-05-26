@@ -52,14 +52,14 @@ export default function Links() {
       style={{ backgroundColor: "#0a0a0a" }}
     >
       {/* Sidebar */}
-      <aside className=\"relative md:absolute md:top-0 md:left-0 px-6 sm:px-10 md:pl-16 md:pr-0 pt-8 sm:pt-10 md:pt-12 pb-4 md:pb-0 z-10\">
+      <aside className="relative md:absolute md:top-0 md:left-0 px-6 sm:px-10 md:pl-16 md:pr-0 pt-8 sm:pt-10 md:pt-12 pb-4 md:pb-0 z-10">
         <h2
-          className=\"text-sm sm:text-base text-[#e8e8e8] tracking-wide uppercase mb-3 md:mb-6\"
+          className="text-sm sm:text-base text-[#e8e8e8] tracking-wide uppercase mb-3 md:mb-6"
           data-testid="links-sidebar-heading"
         >
           LINKS:
         </h2>
-        <ul className=\"flex flex-row flex-wrap gap-x-5 gap-y-1 md:flex-col md:gap-0 md:space-y-1 text-xs sm:text-sm text-[#bdbdbd]\">
+        <ul className="flex flex-row flex-wrap gap-x-5 gap-y-1 md:flex-col md:gap-0 md:space-y-1 text-xs sm:text-sm text-[#bdbdbd]">
           {NAV.map((n) => (
             <li key={n.to}>
               <a
@@ -76,7 +76,7 @@ export default function Links() {
       </aside>
 
       {/* Cards grid */}
-      <div className=\"w-full px-6 md:px-10 lg:px-16 pt-6 md:pt-32 pb-16 flex flex-col min-h-screen\">
+      <div className="w-full px-6 md:px-10 lg:px-16 pt-6 md:pt-32 pb-16 flex flex-col min-h-screen">
         <div className="max-w-3xl mx-auto w-full flex-1 flex items-center fade-in-up">
           <ul
             className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 w-full"
