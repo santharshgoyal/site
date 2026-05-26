@@ -26,7 +26,7 @@ const LINKS = [
     key: "resume",
     name: "Resume",
     handle: "@googledrive",
-    href: "https://drive.google.com/file/d/1MTgjr6wotrLmxponHzG0st5KpugQpN9I/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1vn2ObmPOk40Y5I2wPW9oC_XLOXIb-D6L/view?usp=sharing",
     Icon: FileText,
   },
   {
