@@ -52,14 +52,14 @@ export default function Links() {
       style={{ backgroundColor: "#0a0a0a" }}
     >
       {/* Sidebar */}
-      <aside className="absolute top-0 left-0 pl-8 sm:pl-12 md:pl-16 pt-8 sm:pt-10 md:pt-12 z-10">
+      <aside className=\"relative md:absolute md:top-0 md:left-0 px-6 sm:px-10 md:pl-16 md:pr-0 pt-8 sm:pt-10 md:pt-12 pb-4 md:pb-0 z-10\">
         <h2
-          className="text-sm sm:text-base text-[#e8e8e8] tracking-wide uppercase mb-6"
+          className=\"text-sm sm:text-base text-[#e8e8e8] tracking-wide uppercase mb-3 md:mb-6\"
           data-testid="links-sidebar-heading"
         >
           LINKS:
         </h2>
-        <ul className="space-y-1 text-xs sm:text-sm text-[#bdbdbd]">
+        <ul className=\"flex flex-row flex-wrap gap-x-5 gap-y-1 md:flex-col md:gap-0 md:space-y-1 text-xs sm:text-sm text-[#bdbdbd]\">
           {NAV.map((n) => (
             <li key={n.to}>
               <a
